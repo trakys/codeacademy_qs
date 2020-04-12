@@ -8,11 +8,11 @@ def double_index(lst, index):
   else:
     # essentially the original list until the index (in this case 3)
     new_lst = lst[0:index]
- # adds double the original index value to the new list at the index's index
-  new_lst.append(lst[index]*2)
-  #  adds the rest of the original list (3 + double the indeax so -20 + the old list starting at one after the index)
-  new_lst = new_lst + lst[index+1:]
-  return new_lst
+    # adds double the original index value to the new list at the index's index
+    new_lst.append(lst[index]*2)
+    #  adds the rest of the original list (3 + double the indeax so -20 + the old list starting at one after the index)
+    new_lst = new_lst + lst[index+1:]
+    return new_lst
 
 #Uncomment the line below when your function is done
 print(double_index([3, 8, -10, 12], 2))
