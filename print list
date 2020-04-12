@@ -1,0 +1,17 @@
+def larger_list(lst1, lst2):
+  num_lst1 = len(lst1)
+  num_lst2 = len(lst2)
+  
+  if (num_lst1 > num_lst2):
+    last_element = (lst1[-1])
+    return last_element
+  
+  elif (num_lst1 < num_lst2):
+    last_element = (lst2[-1])
+    return last_element
+  
+  else:
+    last_element = (lst1[-1])
+    return last_element
+
+print(larger_list([4, 10, 2, 5], [-10, 2, 5, 10]))
